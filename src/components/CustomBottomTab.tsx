@@ -4,6 +4,7 @@ import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Animated, { useAnimatedStyle,withSpring, withTiming } from "react-native-reanimated";
 import BottomTabIcon from './BottomTabIcon';
+import THEME from '../assets/styles/theme'
 
 const CustomBottomTab = ({state, descriptors, navigation}: BottomTabBarProps) => {
 
@@ -67,7 +68,7 @@ const CustomBottomTab = ({state, descriptors, navigation}: BottomTabBarProps) =>
                 <BottomTabIcon route={route.name} isFocused={isFocused} />
                 {isFocused ? <Text
                   style={{
-                    color: isFocused ? '#0067FF' : 'white',
+                    color: isFocused ? THEME.COLORS.PURPLE : 'white',
                     fontSize: 12,
                   }}>
                   {route.name}
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
     height: 90,
     position: 'absolute',
     alignSelf: 'center',
-    backgroundColor: '#0067FF',
+    backgroundColor: THEME.COLORS.TABBAR,
     borderRadius: 100,
     alignItems: 'center',
     justifyContent: 'space-around',
@@ -100,13 +101,13 @@ const styles = StyleSheet.create({
   slidingTabContainer: {
     ...StyleSheet.absoluteFillObject,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   slidingTab: {
     width: 70,
     height: 70,
     borderRadius: 100,
-    backgroundColor: 'white',
+    backgroundColor: THEME.COLORS.TABSELECT,
   },
   contentContainer: {
     flex: 1,

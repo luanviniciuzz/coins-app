@@ -1,20 +1,14 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import THEME from '../../assets/styles/theme'
+import Container from '../../components/Container';
 
-
-
-const YourApp = () => {
+const HomePage = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <Text>Try editing me! 🎉</Text>
-     
-    </View>
+    <Container>
+      <Text style={{color:'white'}}>HOME</Text>
+    </Container>
   );
 };
 
-export default YourApp
+export default HomePage

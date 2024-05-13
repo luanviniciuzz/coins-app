@@ -1,17 +1,13 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import Container from '../../components/Container';
 
-const YourApp = () => {
+const WalletPage = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <Text>Try editinasdasdasd! 🎉</Text>
-    </View>
+    <Container>
+      <Text style={{color:'white'}}>WALLET</Text>
+    </Container>
   );
 };
 
-export default YourApp
+export default WalletPage

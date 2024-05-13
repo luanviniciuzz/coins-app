@@ -4,6 +4,7 @@ import HomeIcon from '../assets/svg/home.svg';
 import WalletIcon from '../assets/svg/wallet.svg';
 import ProfileIcon from '../assets/svg/profile.svg';
 import SearchIcon from '../assets/svg/search.svg';
+import THEME from '../assets/styles/theme';
 
 interface Props {
   route: string;
@@ -22,7 +23,7 @@ const BottomTabIcon = ({route, isFocused}: Props) => {
           <HomeIcon
             width={width}
             height={height}
-            fill={isFocused ? '#0067FF' : '#ffffff'}
+            fill={isFocused ? THEME.COLORS.PURPLE : THEME.COLORS.WHITE}
           />
         );
       case 'Search':
@@ -30,7 +31,7 @@ const BottomTabIcon = ({route, isFocused}: Props) => {
           <SearchIcon
             width={width}
             height={height}
-            fill={isFocused ? '#0067FF' : '#ffffff'}
+            fill={isFocused ? THEME.COLORS.PURPLE : THEME.COLORS.WHITE}
           />
         );
       case 'Wallet':
@@ -38,7 +39,7 @@ const BottomTabIcon = ({route, isFocused}: Props) => {
           <WalletIcon
             width={width}
             height={height}
-            fill={isFocused ? '#0067FF' : '#ffffff'}
+            fill={isFocused ? THEME.COLORS.PURPLE : THEME.COLORS.WHITE}
           />
         );
       case 'Profile':
@@ -46,7 +47,7 @@ const BottomTabIcon = ({route, isFocused}: Props) => {
           <ProfileIcon
             width={width}
             height={height}
-            fill={isFocused ? '#0067FF' : '#ffffff'}
+            fill={isFocused ? THEME.COLORS.PURPLE : THEME.COLORS.WHITE}
           />
         );
       default:
