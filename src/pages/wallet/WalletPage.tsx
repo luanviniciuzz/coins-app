@@ -1,13 +1,17 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native'
+import {Text, View} from 'react-native';
 
+const YourApp = () => {
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+      <Text>Try editinasdasdasd! 🎉</Text>
+    </View>
+  );
+};
 
-
-
-export default function Visao(){
-  return(
-    <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
-        <Text style={{color:'red'}}>Visao</Text>
-    </View> 
-  )
-}
+export default YourApp
