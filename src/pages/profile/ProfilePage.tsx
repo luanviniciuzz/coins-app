@@ -6,7 +6,7 @@ import Container from '../../components/Container';
 const ProfilePage = () => {
   return (
     <Container>
-      <Text style={{color:'white'}}>SEARCH</Text>
+      <Text style={{color:'white'}}>Hello word, esta é a pagina PROFILE</Text>
     </Container>
   );
 };

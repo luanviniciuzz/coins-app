@@ -5,7 +5,7 @@ import Container from '../../components/Container';
 const WalletPage = () => {
   return (
     <Container>
-      <Text style={{color:'white'}}>WALLET</Text>
+      <Text style={{color:'white'}}>Hello word, esta é a pagina WALLET</Text>
     </Container>
   );
 };
