@@ -8,8 +8,7 @@ const Container = (props: { children: React.ReactNode }) => {
     <View
       style={{
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+        padding:'5%',
         backgroundColor:THEME.COLORS.BACKGROUND
       }}>
       <StatusBar backgroundColor={THEME.COLORS.BACKGROUND}/>
