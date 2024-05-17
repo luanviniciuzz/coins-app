@@ -23,14 +23,16 @@ const Rotas = () => {
                 component={Splash}
                 options={{
                   headerShown:false,
-                  gestureEnabled:false
+                  gestureEnabled:false,
+                  animation:'fade'
                 }}
               />
               <RootStack.Screen
                 name="HomeTab"
                 component={HomeTab}
                 options={{
-                  headerShown:false
+                  headerShown:false,
+                  animation:'fade'
                 }}
               />
             </RootStack.Navigator>

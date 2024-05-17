@@ -27,8 +27,7 @@ export default function HomeTab() {
       >
         <Tab.Screen
           options={{
-            headerShown:false,
-           
+            headerShown:false
           }}
           name="Home"
           component={HomePage}
