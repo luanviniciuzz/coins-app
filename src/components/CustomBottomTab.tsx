@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     alignSelf: 'center',
     backgroundColor: THEME.COLORS.TABBAR,
-    borderRadius: 100,
+    borderRadius: 16,
     alignItems: 'center',
     justifyContent: 'space-around',
     overflow: 'hidden',
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
   slidingTab: {
     width: 70,
     height: 70,
-    borderRadius: 100,
+    borderRadius: 16,
     backgroundColor: THEME.COLORS.TABSELECT,
   },
   contentContainer: {
