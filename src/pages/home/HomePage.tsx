@@ -11,7 +11,7 @@ import FormatCoin from '../../utils/FormatCoin';
 const HomePage = () => {
   const [price, setPrice] = useState<string>('')
   
-  const MAX_LINE_INDEX = 30
+  const MAX_POINT = 30
   const WIDTH = Dimensions.get('screen').width * 0.90
   const HEIGHT = Dimensions.get('screen').height * 0.30
   const [lineData, setLineData] =  useState<any[]>([]);
@@ -31,7 +31,7 @@ const HomePage = () => {
       setLineData((prev) => {
         const newData = [...prev, point];
         if (newData.length > 30) {
-          return newData.slice(newData.length - 30);
+          return newData.slice(newData.length - MAX_POINT);
         }
         return newData;
       });
@@ -83,8 +83,7 @@ const HomePage = () => {
     index()
   }, []);
 
-
-   const MAX_POINTS = 30;
+    
    const CANDLE_SIZE = 15;
    const CHART_WIDTH = Dimensions.get("window").width - 35;
    const CHART_HEIGHT = 200;
