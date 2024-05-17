@@ -1,10 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Text,StyleSheet, View, Dimensions, ScrollView } from 'react-native';
-import Container from '../../components/Container';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import THEME from '../../assets/styles/theme';
-//import LineChart from '../../components/LineChart';
 import { CandlestickChart, LineChart } from 'react-native-wagmi-charts';
 import FormatCoin from '../../utils/FormatCoin';
 
@@ -12,8 +9,6 @@ const HomePage = () => {
   const [price, setPrice] = useState<string>('')
   
   const MAX_POINT = 30
-  const WIDTH = Dimensions.get('screen').width * 0.90
-  const HEIGHT = Dimensions.get('screen').height * 0.30
   const [lineData, setLineData] =  useState<any[]>([]);
   const [candleData, setCandleData] = useState<any[]>([]);
   
