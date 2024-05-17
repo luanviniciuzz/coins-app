@@ -1,0 +1,5 @@
+<resources>
+    <color name="white">#fff</color>
+    <color name="backgroud_app">#282C34</color>
+    <color name="transparent">#00000000</color>
+</resources>
