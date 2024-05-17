@@ -1,11 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import {Image, Text, View, Animated} from 'react-native';
+import {Image, Text, View, Animated, StatusBar} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RootStackParamList } from './routes';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import THEME from './assets/styles/theme'
-import { useSharedValue, withTiming } from 'react-native-reanimated';
-import Container from './components/Container';
 
 const FadeInView = (props: any) => {
   const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -48,7 +46,13 @@ const Splash = () => {
   },[])
 
   return (
-    <Container>
+    <View  style={{
+        flex: 1,
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:THEME.COLORS.BACKGROUND
+      }}>
+      <StatusBar backgroundColor={THEME.COLORS.BACKGROUND}/>
       <FadeInView>
         <Image
           source={require('./assets/img/getup.png')}
@@ -61,7 +65,7 @@ const Splash = () => {
           
         />
       </FadeInView>
-    </Container>
+    </View>
   );
 };
 
